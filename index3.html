@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- input box focus and blur option -->
+    <input type="text" placeholder="your name" id="focus_blur">
+    <!-- jquery start -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('#focus_blur').focus(function(){
+                $(this).css ('background-color' , 'gray')
+            })
+            $('#focus_blur').blur(function(){
+                $(this).css ('background-color' , 'white')
+            })
+        })
+    </script>
+
+</body>
+</html>

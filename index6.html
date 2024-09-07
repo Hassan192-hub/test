@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- keypress function text-para hide and show -->
+      <hr>
+      <!-- keypress practice -->
+      <h1>keypress changing</h1>
+      <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+       Nostrum totam mollitia except optio, repellendus ut dolores natus.</p>
+      <hr>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('body').keypress(function(){
+                $('.txt').toggle()
+            })
+        })
+    </script>
+</body>
+</html>

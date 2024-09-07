@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+                    <!-- keyup and keydown function -->
+    <hr>
+        <!-- keyup and keydown -->
+        <h1>keyup and key down </h1>
+        <p class="txt1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Et nesciunt aliquam cumque, iure inventore.</p>
+        <hr>
+    <hr>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+
+    <script>
+         $(document).ready(function(){
+                 $('body').keyup(function(){
+                 $('.txt1').css({
+                    'color' : 'blue',
+                     'font-weight' : 'bold'
+                 })
+              })
+                 $('body').keydown(function(){
+                 $('.txt1').css({
+                    'color' : 'aqua',
+                     'font-weight' : 'bold'
+                 })
+              })
+         })
+    </script>
+</body>
+</html>

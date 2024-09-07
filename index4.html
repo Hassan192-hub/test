@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- select font family name and change the para font family -->
+    <select id="select-family">
+        <option value="">select font family</option>
+        <option value="Courier New">Courier New</option>
+        <option value="sans-serif">sans-serif</option>
+        <option value="monospace">monospace</option>
+      </select>                  <br>
+      <span class="text-para">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.Corporis ab
+        fuga, repudiandae nobis accusamus fugit obcaecati quas earum et, eius
+        qui quam illo explicabo consequatur quidem impedit debitis, itaque tempora!
+    </span> 
+        <!-- jquery apply -->
+      <script src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"></script>
+      <script>
+        $(document).ready(function(){
+            $('#select-family').change(function(){
+                let font_fam = $(this).val();
+                console.log(font_fam)
+                $('.text-para').css('font-family' , font_fam)
+            })
+        })
+      </script>
+</body>
+</html>
